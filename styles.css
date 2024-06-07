@@ -69,11 +69,13 @@ main {
     overflow: hidden;
 }
 
+/*active state for blog card*/
 .blog-card:hover {
     box-shadow: 15px 15px 0px hsl(0, 0%, 7%);
     cursor: pointer;
 }
 
+/*active state for blog card title color*/
 .blog-card:hover .blog-title {
     color: hsl(47, 88%, 63%);
 }
@@ -148,19 +150,47 @@ main {
     font-size: 20px;
 }
 
+/*author container*/
 .blog-author {
     display: flex;
     margin-left: 25px;
     margin-bottom: 25px;
 }
 
+/*author img*/
 .blog-author img {
     display: flex;
     align-items: center;
 }
 
+/*author text*/
 .blog-author p {
     display: flex;
     align-items: center;
     margin-left: 10px;
+}
+
+/*media query for smaller screen sizes*/
+@media (min-width: 375px) {
+    .blog-card {
+        width: 65%;
+        height: 75%;
+    }
+}
+
+/*media query for my phone viewport when testing live site*/
+@media (min-width: 376px) and (max-width: 393px) {
+    .blog-card {
+        width: 75%;
+        height: 85%;
+    }
+}
+
+/*media query for desktop views*/
+@media (min-width: 394px) and (max-width: 2560px) {
+    .blog-card {
+        width: 20%;
+        min-width: 320px;
+        min-height: 460px;
+    }
 }
