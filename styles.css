@@ -170,3 +170,19 @@ main {
     margin-left: 10px;
 }
 
+@media (max-width: 393px) {
+    .blog-card {
+        width: 85%;
+        height: 50%;
+        min-height: 580px;
+    }
+}
+
+/*for desktop view, min height of 610 and min width of 408, maybe more*/
+@media (min-width: 394px) and (max-width: 2560) {
+    .blog-card {
+        width: 20%;
+        min-width: 408px;
+        min-height: 610;
+    }
+}
