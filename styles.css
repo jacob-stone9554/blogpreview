@@ -10,6 +10,16 @@ body, main, a, image {
     border: 0;
 }
 
+body {
+    font-family: "Figtree", sans-serif;
+    font-style: normal;
+}
+
+body p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 /*main content area*/
 main {
     display: flex;
@@ -52,7 +62,10 @@ main {
 /*blog image container*/
 .blog-img {
     display: flex;
-    margin: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
     justify-content: center;
 }
 
@@ -60,4 +73,17 @@ main {
 .blog-img img {
     border-radius: 20px;
     width: 100%;
+}
+
+/*blog-tag*/
+.blog-tag {
+    display: flex;
+    border-radius: 10px;
+    background-color: hsl(47, 88%, 63%);
+    margin: 25px;
+    align-items: center;
+    width: min-content;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 35px
 }
