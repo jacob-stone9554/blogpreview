@@ -10,14 +10,21 @@ body, main, a, image {
     border: 0;
 }
 
+/*body styles*/
 body {
     font-family: "Figtree", sans-serif;
     font-style: normal;
 }
 
+/*body paragraph*/
 body p {
     font-size: 16px;
     font-weight: 500;
+}
+
+/*body headers*/
+body h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
 }
 
 /*main content area*/
@@ -57,7 +64,20 @@ main {
     border-radius: 20px;
     width: 20%;
     height: 50%;
+    box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+    transition: box-shadow 0.3s ease;
 }
+
+.blog-card:hover {
+    box-shadow: 15px 15px 0px hsl(0, 0%, 7%);
+    cursor: pointer;
+}
+
+.blog-card:hover .blog-title {
+    color: hsl(47, 88%, 63%);
+}
+
+
 
 /*blog image container*/
 .blog-img {
@@ -78,12 +98,68 @@ main {
 /*blog-tag*/
 .blog-tag {
     display: flex;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: hsl(47, 88%, 63%);
-    margin: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
     align-items: center;
     width: min-content;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 35px
+}
+
+/*blog date container*/
+.blog-date {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+/*blog date paragraph*/
+.blog-date p {
+    font-weight: 600;
+}
+
+/*blog-title container*/
+.blog-title {
+    display: flex;
+    align-items: center;
+    height: min-content;
+    margin-left: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+/*blog description container*/
+.blog-descr {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*blog-descr paragraph*/
+.blog-descr p {
+    color:hsl(0, 0%, 50%);
+    font-size: 20px;
+}
+
+.blog-author {
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.blog-author img {
+    display: flex;
+    align-items: center;
+}
+
+.blog-author p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
