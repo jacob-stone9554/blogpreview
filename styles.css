@@ -52,4 +52,12 @@ main {
 /*blog image container*/
 .blog-img {
     display: flex;
+    margin: 25px;
+    justify-content: center;
+}
+
+/*blog image img*/
+.blog-img img {
+    border-radius: 20px;
+    width: 100%;
 }
