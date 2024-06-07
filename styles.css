@@ -170,27 +170,3 @@ main {
     margin-left: 10px;
 }
 
-/*media query for smaller screen sizes*/
-@media (min-width: 375px) {
-    .blog-card {
-        width: 65%;
-        height: 75%;
-    }
-}
-
-/*media query for my phone viewport when testing live site*/
-@media (min-width: 376px) and (max-width: 393px) {
-    .blog-card {
-        width: 75%;
-        height: 85%;
-    }
-}
-
-/*media query for desktop views*/
-@media (min-width: 394px) and (max-width: 2560px) {
-    .blog-card {
-        width: 20%;
-        min-width: 320px;
-        min-height: 460px;
-    }
-}
